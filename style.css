@@ -1,0 +1,312 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Menu Section */
+.menu {
+    max-width: 800px;
+    margin: 20px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+    color: #d35400;
+    border-bottom: 2px solid #d35400;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    background: #fff;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.menu-item h3 {
+    color: #333;
+    margin: 0;
+}
+
+.menu-item p {
+    color: #777;
+    margin: 5px 0;
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #d35400;
+    display: block;
+    margin-top: 5px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+.hero {
+    text-align: center;
+    padding: 20px;
+}
+
+.hero img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #d35400;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #a04000;
+}
+/* Logo */
+.logo {
+    width: 120px;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+}
+
+/* Gallery */
+.gallery {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.gallery img {
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Slides */
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: 300px; /* Set a fixed height */
+    object-fit: cover; /* Ensure proper scaling */
+    border-radius: 10px;
+}
+
+/* Navigation buttons */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* Fade animation */
+.fade {
+    animation: fadeEffect 1.5s;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0.4; }
+    to { opacity: 1; }
+}
+/* Introduction & Comfort Sections */
+.introduction, .comfort, .price-alert {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff3e0;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.introduction h2, .comfort h2, .price-alert h2 {
+    color: #ff6600;
+}
+
+/* Price Alert Styling */
+.price-alert {
+    background-color: #ffcccc;
+    border-left: 5px solid red;
+    padding: 15px;
+}
+/* About Page Styling */
+.about {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff3e0;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about h2 {
+    color: #ff6600;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Image Styling */
+.about img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+/* Contact Page Styling */
+.contact-info, .contact-form {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff3e0;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #ff6600;
+}
+
+.contact-info p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Contact Form */
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-form label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 90%;
+    max-width: 500px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e65c00;
+}
+/* Opening Hours Styling */
+.opening-hours {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+.opening-hours li {
+    margin: 5px 0;
+    padding: 8px;
+    background: #fff3e0;
+    border-radius: 5px;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}

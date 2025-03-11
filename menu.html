@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Atok D'River</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+            <img src="images/logo.png" alt="Atok D'River Logo" class="logo">
+            <h1>Atok D'River Menu</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <section class="gallery">
+        <img src="images/makanan.png" alt="Atok D'River Restaurant">
+        <img src="images/depankedai.png" alt="Customers at Atok D'River">
+    </section>
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menu | Atok D'River</title>
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Mobile-Friendly Styles */
+            @media (max-width: 768px) {
+                body {
+                    font-size: 16px;
+                }
+                .menu {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                }
+                .menu-item {
+                    width: 90%;
+                    text-align: center;
+                }
+                #search {
+                    width: 90%;
+                    max-width: 300px;
+                }
+                nav ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    padding: 0;
+                }
+                nav ul li {
+                    margin: 5px 0;
+                }
+            }
+    
+            /* Adjust Image Sizes to be Equal */
+            .gallery img {
+                width: 300px; /* Set equal width */
+                height: 200px; /* Set equal height */
+                object-fit: cover; /* Ensure images maintain aspect ratio */
+                border-radius: 10px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+                margin: 10px;
+            }
+        </style>
+    </head>
+
+<body>
+
+    <section class="search-bar">
+        <input type="text" id="search" placeholder="Search menu..." onkeyup="filterMenu()">
+    </section>
+
+    <section class="menu" id="menu-items">
+        <h2>Nasi Goreng (Fried Rice)</h2>
+        <p>Fried rice dishes cooked with a variety of ingredients and flavors.</p>
+        <div class="menu-item"><h3>Tomyam</h3><p>Spicy and sour fried rice infused with tomyam flavors.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Paprik</h3><p>Fried rice served with mixed vegetables and spicy Thai-style sauce.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Daging Merah</h3><p>Fried rice with sweet and spicy red sauce beef.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Ayam Kunyit</h3><p>Fried rice with turmeric-seasoned fried chicken.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Ikan Masin</h3><p>Fried rice with salty fish for an extra umami taste.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Kampung</h3><p>Traditional Malay-style fried rice with anchovies and vegetables.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Cina</h3><p>Chinese-style fried rice with simple seasonings and eggs.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Pattaya</h3><p>Fried rice wrapped in an omelet, served with chili sauce.</p><span>RM 7.50</span></div>
+        <div class="menu-item"><h3>Cili Api</h3><p>Spicy fried rice cooked with bird’s eye chili for extra heat.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Cendawan</h3><p>Fried rice with stir-fried mushrooms for a rich, earthy taste.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>USA</h3><p>Fried rice served with beef, fried egg, and sweet-spicy sauce.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Seafood</h3><p>Fried rice with a mix of shrimp, squid, and fish.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Kerabu</h3><p>Fried rice with fresh herbs and a tangy, spicy flavor.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Belacan</h3><p>Fried rice stir-fried with shrimp paste for a strong, aromatic taste.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Biasa</h3><p>Classic fried rice with egg, simple but satisfying.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Ayam</h3><p>Fried rice with chicken pieces, flavorful and filling.</p><span>RM 7.50</span></div>
+        
+        <h2>Sayur (Vegetables)</h2>
+        <p>Stir-fried vegetables cooked with different seasonings.</p>
+        <div class="menu-item"><h3>Kangkung Ikan Masin</h3><p>Stir-fried water spinach with salted fish.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Kangkung Belacan</h3><p>Water spinach stir-fried with shrimp paste.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Kailan Ikan Masin</h3><p>Stir-fried kailan with salted fish.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Kailan Oyster</h3><p>Stir-fried kailan with oyster sauce.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Taugeh Goreng</h3><p>Stir-fried bean sprouts with light seasoning.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Cendawan Goreng</h3><p>Crispy fried mushrooms.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Kangkung Goreng Biasa</h3><p>Simple stir-fried water spinach.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Kailan Goreng Biasa</h3><p>Simple stir-fried kailan.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Kailan Belacan</h3><p>Stir-fried kailan with shrimp paste.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Sayur Campur</h3><p>Mixed vegetables stir-fried.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Sayur Paprik</h3><p>Mixed vegetables stir-fried with Thai-style sauce.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Sayur Terung Cili Api</h3><p>Eggplant stir-fried with bird’s eye chili.</p><span>RM 7.00</span></div>
+        
+        <h2>Tomyam</h2>
+        <p>Thai-style spicy and sour soups.</p>
+        <div class="menu-item"><h3>Tomyam Ayam</h3><p>Chicken tomyam soup with fresh herbs.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Tomyam Campur</h3><p>Mixed tomyam soup with seafood and chicken.</p><span>RM 7.50</span></div>
+        <div class="menu-item"><h3>Tomyam Daging</h3><p>Tomyam soup with tender beef slices.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Seafood</h3><p>Spicy and sour tomyam soup with seafood.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Sayur</h3><p>Tomyam soup with mixed vegetables.</p><span>RM 7.00</span></div>
+        
+        <h2>Ayam (Chicken Dishes)</h2>
+        <div class="menu-item"><h3>Masak Merah</h3><p>Sweet and spicy red sauce chicken.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Masak Halia</h3><p>Chicken stir-fried with ginger.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Goreng Kunyit</h3><p>Turmeric-seasoned fried chicken.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Masak Kicap</h3><p>Chicken cooked in sweet soy sauce.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Masak Oyster</h3><p>Chicken stir-fried with oyster sauce.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Goreng</h3><p>Simply fried chicken.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Paprik</h3><p>Thai-style stir-fried chicken with vegetables.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Black Pepper</h3><p>Chicken stir-fried in black pepper sauce.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Masak Petai</h3><p>Chicken stir-fried with bitter beans (petai).</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Cili api</h3><p>Chicken stir-fried bird's eye chili.</p><span>RM 7.00</span></div>
+
+        <h2>Daging (Beef Dishes)</h2>
+        <div class="menu-item"><h3>Masak Merah</h3><p>Sweet and spicy red sauce beef.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Masak Halia</h3><p>Beef stir-fried with ginger.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Goreng Kunyit</h3><p>Turmeric-seasoned fried beef.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Masak Kicap</h3><p>Beef cooked in sweet soy sauce.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Masak Oyster</h3><p>Beef stir-fried with oyster sauce.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Masak Cili Api</h3><p>Spicy beef cooked with bird’s eye chili.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Goreng</h3><p>Simply fried beef.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Masak Petai</h3><p>Beef stir-fried with bitter beans (petai).</p><span>RM 9.00</span></div>
+
+        <h2>Puyuh (Quail Dishes)</h2>
+        <div class="menu-item"><h3>Masak Merah</h3><p>Sweet and spicy red sauce quail.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Masak Halia</h3><p>Quail stir-fried with ginger.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Goreng Kunyit</h3><p>Turmeric-seasoned fried quail.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Masak Kicap</h3><p>Quail cooked in sweet soy sauce.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Masak Oyster</h3><p>Quail stir-fried with oyster sauce.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Masak Cili Api</h3><p>Spicy quail cooked with bird’s eye chili.</p><span>RM 10.00</span></div>
+        <div class="menu-item"><h3>Goreng</h3><p>Simply fried quail.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Paprik</h3><p>Quail cooked in spicy Thai-style sauce.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Black Pepper</h3><p>Quail stir-fried in black pepper sauce.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Masak Petai</h3><p>Quail cooked with bitter beans (petai).</p><span>RM 11.00</span></div>
+        
+        
+        <h2>Western Dishes</h2>
+        <div class="menu-item"><h3>Lamb Chop</h3><p>Grilled lamb chop with sauce and sides.</p><span>RM 17.00</span></div>
+        <div class="menu-item"><h3>Chicken Chop</h3><p>Crispy or grilled chicken with flavorful sauce.</p><span>RM 15.00</span></div>
+        <div class="menu-item"><h3>Fish & Chips</h3><p>Crispy battered fish served with fries.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Chicken Grill</h3><p>Grilled chicken marinated in a blend of spices.</p><span>RM 16.00</span></div>
+        <div class="menu-item"><h3>Nasi Goreng Chicken Chop</h3><p>Fried rice served with crispy chicken chop.</p><span>RM 17.00</span></div>
+        <div class="menu-item"><h3>Roti Telur Kentang</h3><p>Roti canai stuffed with egg and potato filling.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Roti Telur Kentang Special</h3><p>Upgraded version with extra ingredients.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Garlic Bread</h3><p>Toasted bread with garlic butter spread.</p><span>RM 1.00</span></div>
+        <div class="menu-item"><h3>Mushroom Soup</h3><p>Creamy mushroom soup, perfect as a starter.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Roti Bakar</h3><p>Traditional toasted bread with butter/kaya.</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Benjo</h3><p>A simple sandwich with egg filling.</p><span>RM 3.00</span></div>
+        <div class="menu-item"><h3>Kentang Goreng</h3><p>Crispy French fries, perfect for snacking.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Nugget</h3><p>Deep-fried chicken nuggets.</p><span>RM 5.50</span></div>
+        
+        <h2>Burgers</h2>
+        <div class="menu-item"><h3>Burger Ayam</h3><p>Classic chicken burger.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Burger Daging</h3><p>Classic beef burger.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Burger Ayam Special</h3><p>Chicken burger with egg and extra toppings.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Burger Daging Special</h3><p>Beef burger with egg and extra toppings.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Burger Ayam Double</h3><p>Double patty chicken burger.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Burger Daging Double</h3><p>Double patty beef burger.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Burger Ayam Cheese</h3><p>Chicken burger with cheese.</p><span>RM 5.50</span></div>
+        <div class="menu-item"><h3>Burger Daging Cheese</h3><p>Beef burger with cheese.</p><span>RM 5.50</span></div>
+        <div class="menu-item"><h3>Burger Ayam Double Special</h3><p>Double chicken burger with egg.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Burger Daging Double Special</h3><p>Double beef burger with egg.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Burger Ayam Special Cheese</h3><p>Chicken burger with egg and cheese.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Burger Daging Special Cheese</h3><p>Beef burger with egg and cheese.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Burger Ayam Double Special Cheese</h3><p>Double chicken burger with egg and cheese.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Burger Daging Double Special Cheese</h3><p>Double beef burger with egg and cheese.</p><span>RM 8.00</span></div>
+        
+        <h2>Hot Dogs & Pasta</h2>
+        <div class="menu-item"><h3>Hot Dog</h3><p>Classic hot dog served in a bun.</p><span>RM 3.50</span></div>
+        <div class="menu-item"><h3>Carbonara</h3><p>Creamy pasta with a rich carbonara sauce.</p><span>RM 14.00</span></div>
+        <div class="menu-item"><h3>Aglio Olio</h3><p>Simple garlic and olive oil pasta with chili flakes.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Bolognese</h3><p>Classic spaghetti with rich tomato-based meat sauce.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Fettuccine</h3><p>Flat pasta served with a choice of sauces.</p><span>RM 14.00</span></div>
+        <div class="menu-item"><h3>Meatball</h3><p>Juicy meatballs served with sauce.</p><span>RM 5.00</span></div>
+
+        <h2>Sup (Soup)</h2>
+        <div class="menu-item"><h3>Sup Ekor</h3><p>Flavorful oxtail soup slow-cooked with herbs and spices.</p><span>RM 10.00</span></div>
+        <div class="menu-item"><h3>Sup Tulang</h3><p>Rich and hearty bone soup with tender meat.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Sup Ayam</h3><p>Light and comforting chicken soup with vegetables.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Sup Daging</h3><p>Beef soup cooked with aromatic spices.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Sup Sayur</h3><p>Vegetable soup with a light and healthy broth.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Sup Cendawan</h3><p>Creamy mushroom soup with a rich taste.</p><span>RM 6.50</span></div>
+        <div class="menu-item"><h3>Sup Perut</h3><p>Spicy and tangy tripe soup with herbs.</p><span>RM 7.00</span></div>
+        <div class="menu-item"><h3>Sup Campur</h3><p>Mixed soup with beef, chicken, and vegetables.</p><span>RM 7.50</span></div>
+
+        <h2>Kerabu (Thai-Inspired Salad)</h2>
+        <div class="menu-item"><h3>Kerabu Perut</h3><p>Spicy and tangy beef tripe salad with fresh herbs.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Kerabu Mangga</h3><p>Refreshing Thai-style mango salad with chili and lime.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Kerabu Udang</h3><p>Spicy prawn salad mixed with fresh vegetables.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Kerabu Sotong</h3><p>Squid salad tossed with Thai-style dressing.</p><span>RM 9.00</span></div>
+        <div class="menu-item"><h3>Kerabu Daging</h3><p>Spicy beef salad with lime and fresh herbs.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Kerabu Ayam</h3><p>Shredded chicken salad with a spicy and tangy flavor.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Kerabu Kaki Ayam (Takda Tulang)</h3><p>Boneless chicken feet salad with spicy lime dressing.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Kerabu Maggi</h3><p>Instant noodle salad with a spicy Thai-style twist.</p><span>RM 7.50</span></div>
+
+        <h2>Udang & Sotong (Prawns & Squid)</h2>
+        <div class="menu-item"><h3>Goreng</h3><p>Simply fried prawns or squid, crispy and flavorful.</p><span>RM 10.00</span></div>
+        <div class="menu-item"><h3>Masak Merah</h3><p>Prawns or squid cooked in a sweet and spicy red sauce.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Masak Cili Api</h3><p>Spicy prawns or squid cooked with bird’s eye chili.</p><span>RM 12.50</span></div>
+        <div class="menu-item"><h3>Masak Petai</h3><p>Prawns or squid stir-fried with bitter beans (petai).</p><span>RM 13.00</span></div>
+        <div class="menu-item"><h3>Goreng Tepung</h3><p>Deep-fried prawns or squid coated in crispy batter.</p><span>RM 11.00</span></div>
+        <div class="menu-item"><h3>Masak Halia</h3><p>Prawns or squid stir-fried with sliced ginger.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Goreng Kunyit</h3><p>Prawns or squid fried with turmeric seasoning.</p><span>RM 11.50</span></div>
+        <div class="menu-item"><h3>Masak Oyster</h3><p>Prawns or squid cooked with oyster sauce.</p><span>RM 12.50</span></div>
+        <div class="menu-item"><h3>Masak Kicap</h3><p>Prawns or squid cooked in sweet soy sauce.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Paprik</h3><p>Prawns or squid stir-fried with mixed vegetables in spicy Thai-style sauce.</p><span>RM 12.50</span></div>
+        <div class="menu-item"><h3>Black Pepper</h3><p>Prawns or squid cooked in a bold black pepper sauce.</p><span>RM 12.50</span></div>
+        <div class="menu-item"><h3>Sambal Petai Ikan Bilis</h3><p>Prawns or squid stir-fried with bitter beans, anchovies, and spicy sambal.</p><span>RM 13.50</span></div>
+
+        <h2>Telur (Egg Dishes)</h2>
+        <div class="menu-item"><h3>Telur Bungkus</h3><p>Omelet wrapped around stir-fried fillings.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Telur Dadar</h3><p>Classic fluffy omelet.</p><span>RM 2.50</span></div>
+        <div class="menu-item"><h3>Telur Mata</h3><p>Sunny-side-up fried egg.</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Telur Bistik</h3><p>Egg dish with a thick, flavorful sauce.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Telur Separuh Masak</h3><p>Soft-boiled eggs, perfect as a light meal.</p><span>RM 2.00</span></div>
+        
+        <h2>Kerang (Clams & Shellfish)</h2>
+        <div class="menu-item"><h3>Kerang Bakar</h3><p>Grilled clams served with spicy dipping sauce.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Kerang Rebus</h3><p>Boiled clams highlighting their natural sweetness.</p><span>RM 7.50</span></div>
+
+        <h2>Ikan (Fish Dishes)</h2>
+        <p>Available fish types: Ikan Kembung, Ikan Talapia, Ikan Siakap, Ikan Cencaru, Ikan Kerapu, Ikan Keli, Ikan Bawal, Ikan Pari.</p>
+        <div class="menu-item"><h3>Goreng</h3><p>Deep-fried fish, crispy on the outside and tender inside.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Bakar</h3><p>Grilled fish marinated with local spices, served with sambal.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Tiga Rasa</h3><p>Fish cooked in a sweet, sour, and spicy sauce.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Stim Limau</h3><p>Steamed fish with lime and herbs.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Stim Asam Boi</h3><p>Steamed fish infused with dried plum for a sweet and tangy flavor.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Stim Halia</h3><p>Steamed fish with ginger and soy sauce.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Asam Pedas</h3><p>Traditional spicy and sour tamarind fish stew.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Bakar Petai</h3><p>Grilled fish served with bitter beans (petai) and sambal.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Masam Manis</h3><p>Fish cooked in a sweet and sour sauce.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Cili Api</h3><p>Fish cooked in spicy bird’s eye chili sauce.</p><span>Market Price</span></div>
+        <div class="menu-item"><h3>Singgang</h3><p>Lightly flavored fish soup with turmeric and tamarind.</p><span>Market Price</span></div>
+        
+        <h2>Mee, Beehoon, Kuey Teow, Maggi (Noodles & Fried Dishes)</h2>
+        <div class="menu-item"><h3>Kungfu</h3><p>Stir-fried noodles with thick egg gravy.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Ladna</h3><p>Noodles stir-fried with vegetables and served in a thick broth.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Hailam</h3><p>Hainan-style stir-fried noodles with a savory sauce.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Bandung</h3><p>Spicy and creamy noodle dish with egg.</p><span>RM 8.00</span></div>
+        <div class="menu-item"><h3>Goreng</h3><p>Classic stir-fried noodles with vegetables and egg.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Kantonis</h3><p>Cantonese-style stir-fried noodles with silky egg sauce.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Sup</h3><p>Light broth-based noodle soup with vegetables.</p><span>RM 6.00</span></div>
+        <div class="menu-item"><h3>Goreng Mamak</h3><p>Indian Muslim-style stir-fried noodles with bold spices.</p><span>RM 7.50</span></div>
+        <div class="menu-item"><h3>Tomyam</h3><p>Spicy and sour tomyam-flavored noodles.</p><span>RM 8.50</span></div>
+        <div class="menu-item"><h3>Goreng Pattaya</h3><p>Fried noodles wrapped in an omelet.</p><span>RM 8.00</span></div>
+
+        <h2>Menu Set</h2>
+        <div class="menu-item"><h3>Atok Balik Kebun</h3><p>2 nasi putih, sup ekor, seafood cili api, telur dadar, 2 sirap limau ais.</p><span>RM 25.00</span></div>
+        <div class="menu-item"><h3>Atok Pagoda</h3><p>Ikan kembung 3 rasa, tomyam campur, kailan ikan masin, telur dadar, 2 nasi putih, jus oren/tembikai 2 gelas.</p><span>RM 45.00</span></div>
+        <div class="menu-item"><h3>Set Pyjamas</h3><p>Daging/ayam masak merah, ikan siakap 3 rasa, kangkung belacan, sup ayam, telur dadar, 2 nasi putih, jus oren/tembikai 2 gelas.</p><span>RM 65.00</span></div>
+        <div class="menu-item"><h3>Set Jubah</h3><p>Ayam kunyit 2 orang makan, ikan siakap 3 rasa, tomyam campur 2 orang makan, kailan ikan masin 2 orang makan, telur dadar 2 orang makan, 4 nasi putih, jus oren/tembikai 1 jug.</p><span>RM 90.00</span></div>
+        <div class="menu-item"><h3>Set Kemeja</h3><p>Daging/ayam masak merah 2 orang makan, udang tepung 2 orang makan, ikan siakap 3 rasa, tomyam campur 2 orang makan, kailan ikan masin 2 orang makan, telur dadar 2 orang makan, 5 nasi putih, jus oren/tembikai 1 jug.</p><span>RM 110.00</span></div>
+        <div class="menu-item"><h3>Set Batik</h3><p>Udang/sotong petai 2 orang makan, daging/ayam masak merah 2 orang makan, ayam kunyit 2 orang makan, ikan siakap 3 rasa 2 orang makan, tomyam campur 2 orang makan, kailan ikan masin 2 orang makan, telur dadar 2 orang makan, 6 nasi putih, jus oren/tembikai 1 jug.</p><span>RM 155.00</span></div>
+        <div class="menu-item"><h3>Set Blazer</h3><p>Udang/sotong petai 3 orang makan, daging/ayam masak merah 3 orang makan, ayam kunyit 3 orang makan, ikan siakap 3 rasa 2 orang makan, tomyam campur 3 orang makan, kailan ikan masin 3 orang makan, telur dadar 3 orang makan, 8 nasi putih, jus oren/tembikai 2 jug.</p><span>RM 210.00</span></div>
+        
+        <h2>Happy Hour (6PM - 8PM)</h2>
+        <div class="menu-item"><h3>Nasi Goreng Chicken Chop / Lamb Chop</h3><p>Includes a free drink (Sirap / Teh O Ais).</p></div>
+        
+        <h2>Special Menu</h2>
+        <div class="menu-item"><h3>Sup Keting Kambing</h3><p>A rich and flavorful goat tendon soup, slow-cooked with aromatic herbs and spices for a hearty taste.</p><span>RM 12.00</span></div>
+        <div class="menu-item"><h3>Terung + Jering + Ikan Bilis Cili Api</h3><p>A spicy and savory dish featuring eggplant, jering (bitter bean), and crispy anchovies, stir-fried with bird’s eye chili for an extra kick.</p><span>RM 10.00</span></div>
+
+        <h2>Minuman (Beverages)</h2>
+        <div class="menu-item"><h3>Air Kosong</h3><p>Plain water.</p><span>RM 0.30</span></div>
+        <div class="menu-item"><h3>Teh O</h3><p>Plain tea.</p><span>RM 1.50</span></div>
+        <div class="menu-item"><h3>Teh O Limau</h3><p>Tea with lime.</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Teh O Laici</h3><p>Tea with lychee.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Teh</h3><p>Milk tea.</p><span>RM 2.50</span></div>
+        <div class="menu-item"><h3>Teh Halia</h3><p>Ginger tea.</p><span>RM 3.00</span></div>
+        <div class="menu-item"><h3>Kopi O</h3><p>Black coffee.</p><span>RM 1.50</span></div>
+        <div class="menu-item"><h3>Kopi</h3><p>Milk coffee.</p><span>RM 2.50</span></div>
+        <div class="menu-item"><h3>Milo O</h3><p>Plain Milo drink.</p><span>RM 2.50</span></div>
+        <div class="menu-item"><h3>Milo</h3><p>Milo with milk.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Nescafe O</h3><p>Black Nescafe.</p><span>RM 2.50</span></div>
+        <div class="menu-item"><h3>Nescafe</h3><p>Milk Nescafe.</p><span>RM 3.00</span></div>
+        <div class="menu-item"><h3>Neslo</h3><p>Nescafe + Milo mix.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Kopi Jantan</h3><p>Strong coffee.</p><span>RM 3.50</span></div>
+        <div class="menu-item"><h3>Sirap</h3><p>Rose syrup drink.</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Sirap Limau</h3><p>Rose syrup with lime.</p><span>RM 2.50</span></div>
+        <div class="menu-item"><h3>Sirap Laici</h3><p>Rose syrup with lychee.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Sirap Bandung</h3><p>Rose syrup with milk.</p><span>RM 3.00</span></div>
+        <div class="menu-item"><h3>Sirap Bandung Laici</h3><p>Rose syrup with milk & lychee.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Bandung Cincau</h3><p>Rose syrup with grass jelly.</p><span>RM 3.50</span></div>
+        <div class="menu-item"><h3>Barli</h3><p>Barley drink.</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Barli Limau</h3><p>Barley with lime.</p><span>RM 3.50</span></div>
+        <div class="menu-item"><h3>Asam Boi</h3><p>Dried plum drink.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Extra Joss</h3><p>Energy drink.</p><span>RM 3.00</span></div>
+        <div class="menu-item"><h3>Susu</h3><p>Milk drink.</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Laici</h3><p>Lychee drink.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Horlicks</h3><p>Classic Horlicks drink.</p><span>RM 3.00</span></div>
+        <div class="menu-item"><h3>Laicikang</h3><p>Sweet herbal drink with various ingredients.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>1 Jug Air Kosong</h3><p>Plain water in a jug.</p><span>RM 3.00</span></div>
+
+        <h3>Jus Buah (Fresh Juices)</h3>
+        <div class="menu-item"><h3>Jus Tembikai</h3><p>Fresh watermelon juice.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Jus Nenas</h3><p>Fresh pineapple juice.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Jus Oren</h3><p>Fresh orange juice.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Jus Epal</h3><p>Fresh apple juice.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Jus Carrot Susu</h3><p>Carrot juice mixed with milk.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Jus Belimbing</h3><p>Fresh starfruit juice.</p><span>RM 4.50</span></div>
+        <div class="menu-item"><h3>Jus Epal Laici</h3><p>Apple juice with lychee.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Jus Epal Asam Boi</h3><p>Apple juice with dried plum (asam boi).</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Jus Kedondong Asam Boi</h3><p>Ambarella juice with dried plum.</p><span>RM 5.00</span></div>
+        <div class="menu-item"><h3>Air Buah Campur</h3><p>Mixed fruit juice.</p><span>RM 5.50</span></div>
+        <div class="menu-item"><h3>1 Jus Air Buah</h3><p>Large jug of mixed fruit juice.</p><span>RM 18.00</span></div>
+
+        <h2>Add on</h2>
+        <div class="menu-item"><h3>Nasi putih</h3><p>Plain rice</p><span>RM 2.00</span></div>
+        <div class="menu-item"><h3>Nasi bujang</h3><p>Steamed rice served with a fried egg and sambal or soy sauce for a simple yet satisfying meal.</p><span>RM 4.00</span></div>
+        <div class="menu-item"><h3>Sambal belacan</h3><p>A spicy and tangy shrimp paste chili sauce, perfect as a dipping sauce or side to enhance your meal.</p><span>RM 0.50</span></div>
+        <div class="menu-item"><h3>Ikan masin goreng</h3><p>Crispy fried salted fish with a rich, savory taste, perfect as a flavorful side dish</p><span>RM 1.50</span></div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Atok D'River. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function filterMenu() {
+            let input = document.getElementById("search").value.toLowerCase();
+            let items = document.getElementsByClassName("menu-item");
+            for (let i = 0; i < items.length; i++) {
+                let item = items[i];
+                let text = item.textContent.toLowerCase();
+                if (text.includes(input)) {
+                    item.style.display = "block";
+                } else {
+                    item.style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
+
+
