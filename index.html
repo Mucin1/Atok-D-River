@@ -3,10 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atok D'River</title>
+    <title>Atok D'River | Home</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Welcome to Atok D'River</h1>
-    <p>This is the official website of Atok D'River Restaurant.</p>
+    <header>
+        <h1>Welcome to Atok D'River</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/logo.png" alt="Atok D'River Restaurant">
+        <h2>Authentic Malaysian Cuisine by the River</h2>
+        <p>Experience the best traditional Malaysian flavors in a cozy riverside setting.</p>
+        <a href="menu.html" class="button">View Menu</a>
+    </section>
+
+    <section class="introduction">
+        <h2>Welcome to Atok D'River</h2>
+        <p>Experience the best of Malaysian cuisine at Atok D'River. Our menu is crafted with love, offering delicious and authentic flavors for everyone to enjoy.</p>
+    </section>
+    
+    <section class="comfort">
+        <h2>Comfort & Atmosphere</h2>
+        <p>Relax in our cozy and friendly environment. Whether you're dining with family, friends, or colleagues, we ensure a comfortable and enjoyable experience.</p>
+    </section>
+    
+    <section class="price-alert">
+        <h2>⚠️ Price Disclaimer</h2>
+        <p>Please note that menu prices may change from time to time due to market conditions. We appreciate your understanding.</p>
+    </section>
+
+
+
+<section class="slideshow-container">
+    <div class="slide fade">
+        <img src="images/restaurant.png" alt="Atok D'River Restaurant">
+    </div>
+    <div class="slide fade">
+        <img src="images/people.png" alt="Customers at Atok D'River">
+    </div>
+    <div class="slide fade">
+        <img src="images/orangmakansatu.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/orangmakantiga.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/orangmakanempat.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/orangmakanlima.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/makanandua.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/makanan.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/kedai.png" alt="Atok D'River Logo">
+    </div>
+    <div class="slide fade">
+        <img src="images/kedaisatu.png" alt="Atok D'River Logo">
+    </div>
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+</section>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Atok D'River</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Mobile-Friendly Styles */
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .menu-item {
+                width: 90%;
+                text-align: center;
+            }
+            #search {
+                width: 90%;
+                max-width: 300px;
+            }
+            nav ul {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 0;
+            }
+            nav ul li {
+                margin: 5px 0;
+            }
+        }
+
+        /* Adjust Image Sizes to be Equal */
+        .gallery img {
+            width: 300px; /* Set equal width */
+            height: 200px; /* Set equal height */
+            object-fit: cover; /* Ensure images maintain aspect ratio */
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 10px;
+        }
+    </style>
+</head>
+
+<footer>
+    <p>&copy; 2025 Atok D'River. All rights reserved.</p>
+</footer>
+
+<script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+
+    function changeSlide(n) {
+        slideIndex += n;
+        let slides = document.getElementsByClassName("slide");
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        if (slideIndex < 1) { slideIndex = slides.length; }
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+</script>
 </body>
-</html>
